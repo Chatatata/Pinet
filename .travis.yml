@@ -3,3 +3,5 @@ jdk:
   - openjdk10
 services:
   - postgresql
+before_script:
+  - psql -c 'CREATE DATABASE pinet_dev;' -U postgres
